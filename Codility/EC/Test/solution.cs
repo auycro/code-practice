@@ -1,4 +1,4 @@
-//https://app.codility.com/c/feedback/7233TX-V5C/
+//I didn't try this. But it should work....
 
 using System;
 using System.Collections.Generic;
