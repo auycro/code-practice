@@ -10,7 +10,7 @@ namespace MeetingsRoomArrangment
         }
 
 /* Concept. 
-  1. Allocate Seat Map for Meeting Room
+  1. Allocate Seat Map for Meeting Room as FEN
   2. Take number of seats by checking the Neighbor, less is better. 
   3. Try 2 solutions for taking seat. 
 	  Solution [1]: Taking seat from first. 
