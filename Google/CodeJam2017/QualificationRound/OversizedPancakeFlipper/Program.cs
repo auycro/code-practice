@@ -3,26 +3,22 @@ using System.Collections.Generic;
 using System.Linq;
 
 public class Solution {
+    static bool DEBUG = false;
     static void Main(string[] args)
     {
-        List<string> arr = ReadInput();
-        for(int i=0;i<arr.Count();i++){
-            var item = arr[i].Split(' ');
-            string S = item[0];
-            int K = Int32.Parse(item[1]);
-            string result = solution(S,K);
-            PrintOutput(i, result);
-        };
+      DEBUG = args.Where(x=>x.ToLower()=="debug").Count() > 0; 
+      DoSolving();
     }
     
     static List<string> ReadInput(){
-        int T = Int32.Parse(Console.ReadLine());
-        string[] S = new string[T];
-        for(int i=0;i<S.Count();i++){
-            S[i] = Console.ReadLine();
-            //Console.WriteLine(S[i]);
+        List<string> result = new List<string>();
+        string test_case = Console.ReadLine();
+        int T = Int32.Parse(test_case);
+        result.Add(test_case);
+        for(int i=0;i<T;i++){
+            result.Add(Console.ReadLine);
         }
-        return S.ToList();
+        return result;
     }
     
     static void PrintOutput (int index, string result){
@@ -35,9 +31,22 @@ public class Solution {
         
         return result.ToString();   
     }
-    
+
+    static void DoSolving(){
+      List<string> arr = (!DEBUG)? ReadInput() : MockData();
+
+      for(int i=0;i<arr.Count();i++){
+        var item = arr[i].Split(' ');
+        string S = item[0];
+        int K = Int32.Parse(item[1]);
+        string result = solution(S,K);
+        PrintOutput(i, result);
+      };
+    }
+
     static List<string> MockData(){
       List<string> result = new List<string>();
+      result.Add("3");
       result.Add("---+-++- 3");
       result.Add("+++++ 4");
       result.Add("-+-+- 4");
