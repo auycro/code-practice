@@ -6,6 +6,7 @@ using System.Linq;
 
 // you can write to stdout for debugging purposes, e.g.
 // Console.WriteLine("this is a debug message");
+//https://app.codility.com/demo/results/trainingQ8ZGNT-FSX/
 
 class Solution {
     public int solution(int[] A) {
