@@ -8,6 +8,8 @@
 
 [LeetCode](#leetcode)
 
+[Hackerrank](#hackerrank)
+
 ### Codility
 
 BinaryGap
@@ -32,6 +34,8 @@ DoOverlap
 
 ### Google
 
+OversizedPancakeFlipper
+
 ### LeetCode
 
 Permutations
@@ -41,3 +45,9 @@ PermutationSequence
 RectangleArea
 
 RectangleOverlap
+
+### Hackerrank
+
+CountingValleys
+
+Sales by March (sock-merchant)
