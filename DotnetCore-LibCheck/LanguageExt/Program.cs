@@ -2,6 +2,7 @@
 using LanguageExt;
 using static LanguageExt.Prelude;
 using System.Threading.Tasks;
+using System.Linq;
 
 namespace LanguageExt
 {
@@ -9,7 +10,11 @@ namespace LanguageExt
     {
         static async Task Main(string[] args)
         {
-          await FooBar();
+          //await FooBar();
+
+          //string s = "kmretasscityylpdhuwjirnqimlkcgxubxmsxpypgzxtenweirknjtasxtvxemtwxuarabssvqdnktqadhyktagjxoanknhgilnm";
+          //int a = s.ToCharArray().Where(x => x =='a').Count();
+          //Console.WriteLine(a);
 
           var temp = Tuple("a","b");
           var t2 = temp.Map((a,b) => $"{a} {b}" );
@@ -24,4 +29,3 @@ namespace LanguageExt
         }
     }
 }
-//using System;class t{static void Main(){int i=2;int[] j = new int[31];j[0]=0;j[1]=1;Console.WriteLine($"{j[0]}\n{j[1]}");while(i<31){j[i]=j[i-1]+j[i-2];Console.WriteLine(j[i]);i++;}}}
