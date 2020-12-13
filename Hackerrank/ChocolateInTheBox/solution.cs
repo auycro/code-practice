@@ -1,0 +1,1 @@
+//https://en.wikipedia.org/wiki/Nim#Proof_of_the_winning_formula
