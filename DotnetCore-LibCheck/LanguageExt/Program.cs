@@ -10,7 +10,7 @@ namespace LanguageExt
     {
         static async Task Main(string[] args)
         {
-          //await FooBar();
+          await FooBar();
 
           //string s = "kmretasscityylpdhuwjirnqimlkcgxubxmsxpypgzxtenweirknjtasxtvxemtwxuarabssvqdnktqadhyktagjxoanknhgilnm";
           //int a = s.ToCharArray().Where(x => x =='a').Count();
@@ -25,7 +25,7 @@ namespace LanguageExt
         }
 
         static async Task FooBar(){
-          await Task.Delay(1000);
+          await Task.Delay(500);
         }
     }
 }
