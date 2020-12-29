@@ -21,21 +21,13 @@ function Solution(){
   //Write your code here
   var queue = [],stack = [];
   
-  this.enqueueCharacter = function (c){
-      queue.push(c);
-  }
+  this.enqueueCharacter = (c)=>{queue.push(c)};
   
-  this.dequeueCharacter = function (){
-      return queue.shift();
-  }
+  this.dequeueCharacter = ()=>{return queue.shift()};
   
-  this.pushCharacter = function (c){
-      stack.push(c);
-  }
+  this.pushCharacter = (c)=>{stack.push(c)}
   
-  this.popCharacter = function (){
-      return stack.pop();
-  }
+  this.popCharacter = ()=>{return stack.pop()};
 　
 }
 
