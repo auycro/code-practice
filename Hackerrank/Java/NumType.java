@@ -46,7 +46,7 @@ import java.lang.Math;
 * int{-truncated-}
 ***/
 
-class Solution{
+class NumType {
     public static void main(String []argh)
     {
         Scanner sc = new Scanner(System.in);

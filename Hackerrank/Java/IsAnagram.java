@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Solution {
+public class IsAnagram {
 
     static boolean isAnagram(String a, String b){
         char[] char_a = a.toLowerCase().toCharArray();

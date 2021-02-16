@@ -5,7 +5,7 @@ import java.text.*;
 import java.math.*;
 import java.util.regex.*;
 
-public class Solution {
+public class StaticInitializerBlock {
 
 //Write your code here
 static boolean flag = false;

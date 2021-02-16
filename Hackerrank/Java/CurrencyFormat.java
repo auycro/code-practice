@@ -1,7 +1,7 @@
 import java.util.*;
 import java.text.*;
 
-public class Solution {
+public class CurrencyFormat {
     
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
