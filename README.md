@@ -8,7 +8,7 @@
 
 [LeetCode](#leetcode)
 
-[Hackerrank](#hackerrank)
+[Hackerrank](https://github.com/auycro/code-practice/tree/main/Hackerrank)
 
 ### Codility
 
@@ -45,9 +45,3 @@ PermutationSequence
 RectangleArea
 
 RectangleOverlap
-
-### Hackerrank
-
-CountingValleys
-
-Sales by March (sock-merchant)
