@@ -5,6 +5,8 @@ import (
 	"strings"
 )
 
+/// Pattern1
+
 func isAlienSorted(words []string, order string) bool {
 	split := strings.Split(order, "")
 	//fmt.Printf("%v", split)
@@ -45,8 +47,46 @@ func isSorted(s1, s2 string, sortOrder map[string]int) bool {
 	return true
 }
 
+/// Pattern2
+
+func isAlienSorted2(words []string, order string) bool {
+	if len(words) <= 1 {
+		return true
+	}
+
+	charToIndex := make(map[byte]int)
+	for i := 0; i < len(order); i++ {
+		charToIndex[order[i]] = i
+	}
+
+	for i := 0; i < len(words)-1; i++ {
+		first := words[i]
+		second := words[i+1]
+
+		var j int
+		for ; j < len(first) && j < len(second); j++ {
+			if charToIndex[first[j]] > charToIndex[second[j]] {
+				return false
+			}
+			if charToIndex[first[j]] < charToIndex[second[j]] {
+				break
+			}
+		}
+
+		if j == len(second) && len(second) < len(first) {
+			return false
+		}
+	}
+
+	return true
+}
+
 func main() {
 	fmt.Printf("\nResult1: %v\n", isAlienSorted([]string{"hello", "hello", "leetcode"}, "hlabcdefgijkmnopqrstuvwxyz"))
 	fmt.Printf("\nResult2: %v\n", isAlienSorted([]string{"word", "world", "row"}, "worldabcefghijkmnpqstuvxyz"))
 	fmt.Printf("\nResult3: %v\n", isAlienSorted([]string{"apple", "app"}, "hlabcdefgijkmnopqrstuvwxyz"))
+
+	fmt.Printf("\nResult1: %v\n", isAlienSorted2([]string{"hello", "hello", "leetcode"}, "hlabcdefgijkmnopqrstuvwxyz"))
+	fmt.Printf("\nResult2: %v\n", isAlienSorted2([]string{"word", "world", "row"}, "worldabcefghijkmnpqstuvxyz"))
+	fmt.Printf("\nResult3: %v\n", isAlienSorted2([]string{"apple", "app"}, "hlabcdefgijkmnopqrstuvwxyz"))
 }
