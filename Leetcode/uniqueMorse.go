@@ -1,4 +1,4 @@
-package uniqueMorse
+package main
 
 import "fmt"
 

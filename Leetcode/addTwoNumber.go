@@ -1,4 +1,4 @@
-package addTwoNumberGo
+package main
 
 import (
 	"fmt"

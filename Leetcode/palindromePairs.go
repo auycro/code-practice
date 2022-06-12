@@ -1,4 +1,4 @@
-package palindromePairs
+package main
 
 import "fmt"
 

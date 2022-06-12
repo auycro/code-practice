@@ -1,4 +1,4 @@
-package alienSort
+package main
 
 import (
 	"fmt"

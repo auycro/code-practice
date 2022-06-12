@@ -1,4 +1,4 @@
-package uniqueEmail
+package main
 
 import (
 	"fmt"

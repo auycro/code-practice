@@ -1,4 +1,4 @@
-package myHashSet
+package main
 
 import "fmt"
 
